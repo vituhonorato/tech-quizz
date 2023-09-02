@@ -1,49 +1,9 @@
 "use client"
 
 import React, { useState } from 'react';
+import quizDataJs from '@/utils/quizzDataJs';
 
-const quizData = [
-  {
-    question: "Which language runs in a web browser?",
-    options: [
-      { text: "Java", id: "a" },
-      { text: "C", id: "b" },
-      { text: "Python", id: "c" },
-      { text: "JavaScript", id: "d" },
-    ],
-    correct: "d",
-  },
-  {
-    question: "What does CSS stand for?",
-    options: [
-      { text: "Central Style Sheets", id: "a" },
-      { text: "Cascading Style Sheets", id: "b" },
-      { text: "Cascading Simple Sheets", id: "c" },
-      { text: "Cars SUVs Sailboats", id: "d" },
-    ],
-    correct: "b",
-  },
-  {
-    question: "What does HTML stand for?",
-    options: [
-      { text: "Hypertext Markup Language", id: "a" },
-      { text: "Hypertext Markdown Language", id: "b" },
-      { text: "Hyperloop Machine Language", id: "c" },
-      { text: "Helicopters Terminals Motorboats Lamborghinis", id: "d" },
-    ],
-    correct: "a",
-  },
-  {
-    question: "What year was JavaScript launched?",
-    options: [
-      { text: "1996", id: "a" },
-      { text: "1995", id: "b" },
-      { text: "1994", id: "c" },
-      { text: "none of the above", id: "d" },
-    ],
-    correct: "b",
-  },
-];
+
 
 function JavascriptScreen() {
   const [currentQuiz, setCurrentQuiz] = useState(0);
@@ -55,7 +15,7 @@ function JavascriptScreen() {
   };
 
   const handleNextQuestion = () => {
-    if (selected === quizData[currentQuiz].correct) {
+    if (selected === quizDataJs[currentQuiz].correct) {
       setScore(score + 1);
     }
     setSelected(null);
@@ -70,12 +30,12 @@ function JavascriptScreen() {
 
   return (
     <div className="App">
-      {currentQuiz < quizData.length ? (
+      {currentQuiz < quizDataJs.length ? (
         <div>
           <h2>Question {currentQuiz + 1}</h2>
-          <p>{quizData[currentQuiz].question}</p>
+          <p>{quizDataJs[currentQuiz].question}</p>
           <ul>
-            {quizData[currentQuiz].options.map((option) => (
+            {quizDataJs[currentQuiz].options.map((option) => (
               <li key={option.id}>
                 <label>
                   <input
@@ -94,7 +54,7 @@ function JavascriptScreen() {
         </div>
       ) : (
         <div>
-          <h2>You answered {score}/{quizData.length} questions correctly</h2>
+          <h2>You answered {score}/{quizDataJs.length} questions correctly</h2>
           <button onClick={resetQuiz}>Reload</button>
         </div>
       )}

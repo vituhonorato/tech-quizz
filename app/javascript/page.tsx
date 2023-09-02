@@ -45,7 +45,7 @@ const quizData = [
   },
 ];
 
-function App() {
+function JavascriptScreen() {
   const [currentQuiz, setCurrentQuiz] = useState(0);
   const [score, setScore] = useState(0);
   const [selected, setSelected] = useState(null);
@@ -102,4 +102,4 @@ function App() {
   );
 }
 
-export default App;
+export default JavascriptScreen;

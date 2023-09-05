@@ -80,6 +80,56 @@ const quizDataJs = [
         correct: "a",
       },
       {
+        question: "Como uma função cria uma clausura?",
+        options: [
+          { text: "Ele recarrega o documento sempre que o valor muda.", id: "a" },
+          { text: "Ele retorna uma referência a uma variável em seu escopo pai.", id: "b" },
+          { text: "Ele conclui a execução sem retornar", id: "c" },
+          { text: "Ele vai copiar uma variável local para o escopo global.", id: "d" },
+        ],
+        correct: "b",
+      },
+      {
+        question: "Você precisa corresponder a um valor de tempo como 12:00:32. Qual das seguintes expressões regulares funcionaria para o seu código?",
+        options: [
+          { text: "/[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/", id: "a" },
+          { text: "/\d\d:\d\d:\d\d/", id: "b" },
+          { text: "/[0-9]+:[0-9]+:[0-9]+/", id: "c" },
+          { text: "/ : : /", id: "d" },
+        ],
+        correct: "b",
+      },
+      {
+        question: "Qual propriedade referencia o objeto DOM que despachou um evento?",
+        options: [
+          { text: "self", id: "a" },
+          { text: "object", id: "b" },
+          { text: "target", id: "c" },
+          { text: "source", id: "d" },
+        ],
+        correct: "c",
+      },
+      {
+        question: " Qual método converte dados JSON em um objeto JavaScript?",
+        options: [
+          { text: "JSON.fromString();", id: "a" },
+          { text: "JSON.parse()", id: "b" },
+          { text: "JSON.toObject()", id: "c" },
+          { text: "JSON.stringify()", id: "d" },
+        ],
+        correct: "b",
+      },
+      {
+        question: "",
+        options: [
+          { text: "", id: "a" },
+          { text: "", id: "b" },
+          { text: "", id: "c" },
+          { text: "", id: "d" },
+        ],
+        correct: "",
+      },
+      {
         question: "",
         options: [
           { text: "", id: "a" },

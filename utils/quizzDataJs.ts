@@ -169,6 +169,56 @@ const quizDataJs = [
         ],
         correct: "b",
       },
+      {
+        question: "Qual palavra-chave que define variável permite que sua variável seja acessada (como indefinida) antes da linha que a define?",
+        options: [
+          { text: "Todas elas", id: "a" },
+          { text: "const", id: "b" },
+          { text: "var", id: "c" },
+          { text: "let", id: "d" },
+        ],
+        correct: "c",
+      },
+      {
+        question: "Qual dos seguintes valores não é um booleano falso?",
+        options: [
+          { text: "Boolean(0)", id: "a" },
+          { text: "Boolean('')", id: "b" },
+          { text: "Boolean(NaN)", id: "c" },
+          { text: "Boolean('false')", id: "d" },
+        ],
+        correct: "d",
+      },
+      {
+        question: "Qual das alternativas a seguir não é uma palavra-chave em JavaScript?",
+        options: [
+          { text: "this", id: "a" },
+          { text: "catch", id: "b" },
+          { text: "function", id: "c" },
+          { text: "array", id: "d" },
+        ],
+        correct: "d",
+      },
+      {
+        question: "Qual variável é um parâmetro implícito para cada função em JavaScript?",
+        options: [
+          { text: "Arguments", id: "a" },
+          { text: "args", id: "b" },
+          { text: "argsArray", id: "c" },
+          { text: "argumentsList", id: "d" },
+        ],
+        correct: "a",
+      },
+      {
+        question: "Que tipo de função pode ter sua execução suspensa e retomada posteriormente?",
+        options: [
+          { text: "Generator function", id: "a" },
+          { text: "Arrow function", id: "b" },
+          { text: "Async/ Await function", id: "c" },
+          { text: "Promise function", id: "d" },
+        ],
+        correct: "a",
+      },
       /*{
         question: "",
         options: [

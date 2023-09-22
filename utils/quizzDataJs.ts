@@ -219,6 +219,56 @@ const quizDataJs = [
         ],
         correct: "a",
       },
+      {
+        question: "Qual afirmação é verdadeira sobre Programação Funcional?",
+        options: [
+          { text: "Cada objeto no programa deve ser uma função.", id: "a" },
+          { text: "O código é agrupado com o estado que ele modifica.", id: "b" },
+          { text: "Os campos e métodos de data são mantidos em unidades.", id: "c" },
+          { text: "Os efeitos colaterais não são permitidos.", id: "d" },
+        ],
+        correct: "d",
+      },
+      {
+        question: "Seu código está produzindo o erro: TypeError: Não é possível ler a propriedade 'reduzir' de indefinido. O que isso significa?",
+        options: [
+          { text: "Você está chamando um método chamado reduzir em um objeto declarado, mas sem valor.", id: "a" },
+          { text: "Você está chamando um método chamado reduzir em um objeto que não existe.", id: "b" },
+          { text: "Você está chamando um método chamado reduzir em um array vazio.", id: "c" },
+          { text: "Você está chamando um método chamado reduzir em um objeto que possui um valor nulo.", id: "d" },
+        ],
+        correct: "a",
+      },
+      {
+        question: "Qual escolha não é um operador unário?",
+        options: [
+          { text: "typeof", id: "a" },
+          { text: "delete", id: "b" },
+          { text: "instanceof", id: "c" },
+          { text: "void", id: "d" },
+        ],
+        correct: "d",
+      },
+      {
+        question: "Qual palavra-chave é usada para criar um erro?",
+        options: [
+          { text: "throw", id: "a" },
+          { text: "exception", id: "b" },
+          { text: "catch", id: "c" },
+          { text: "error", id: "d" },
+        ],
+        correct: "a",
+      },
+      {
+        question: "",
+        options: [
+          { text: "", id: "a" },
+          { text: "", id: "b" },
+          { text: "", id: "c" },
+          { text: "", id: "d" },
+        ],
+        correct: "",
+      },
       /*{
         question: "",
         options: [

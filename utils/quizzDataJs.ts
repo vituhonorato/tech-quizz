@@ -260,12 +260,12 @@ const quizDataJs = [
         correct: "a",
       },
       {
-        question: "",
+        question: "Qual é a diferença entre os atributos async e defer da tag de script HTML?",
         options: [
-          { text: "", id: "a" },
-          { text: "", id: "b" },
-          { text: "", id: "c" },
-          { text: "", id: "d" },
+          { text: "O atributo defer pode funcionar de forma síncrona.", id: "a" },
+          { text: "O atributo defer funciona apenas com geradores", id: "b" },
+          { text: "O atributo defer funciona apenas com promessas.", id: "c" },
+          { text: "O atributo defer carregará os scripts de forma assíncrona em ordem.", id: "d" },
         ],
         correct: "",
       },

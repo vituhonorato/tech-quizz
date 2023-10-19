@@ -110,3 +110,5 @@ const quizDataNode = [
         correct: "",
       },*/
 ]
+
+export default quizDataNode

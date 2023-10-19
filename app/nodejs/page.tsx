@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import quizDataJs from '@/utils/quizzDataJs';
+import quizDataNode from '@/utils/quizzDataNode';
 
 
 
@@ -15,7 +15,7 @@ function NodeJsScreen() {
   };
 
   const handleNextQuestion = () => {
-    if (selected === quizDataJs[currentQuiz].correct) {
+    if (selected === quizDataNode[currentQuiz].correct) {
       setScore(score + 1);
     }
     setSelected(null);
@@ -30,12 +30,12 @@ function NodeJsScreen() {
 
   return (
     <div className="App">
-      {currentQuiz < quizDataJs.length ? (
+      {currentQuiz < quizDataNode.length ? (
         <div>
           <h2>Question {currentQuiz + 1}</h2>
-          <p>{quizDataJs[currentQuiz].question}</p>
+          <p>{quizDataNode[currentQuiz].question}</p>
           <ul>
-            {quizDataJs[currentQuiz].options.map((option) => (
+            {quizDataNode[currentQuiz].options.map((option) => (
               <li key={option.id}>
                 <label>
                   <input
@@ -54,7 +54,7 @@ function NodeJsScreen() {
         </div>
       ) : (
         <div>
-          <h2>You answered {score}/{quizDataJs.length} questions correctly</h2>
+          <h2>You answered {score}/{quizDataNode.length} questions correctly</h2>
           <button onClick={resetQuiz}>Reload</button>
         </div>
       )}

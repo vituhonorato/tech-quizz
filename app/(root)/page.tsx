@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <UserButton afterSignOutUrl="/"/>
-      <p>Root page</p>
+      <h1>Root page</h1>
     </div>
   )
 }
